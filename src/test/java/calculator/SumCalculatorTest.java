@@ -29,4 +29,8 @@ class SumCalculatorTest {
     void sumZero() {
         assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
     }
+    @Test
+    void sumZero2() {
+        assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
+    }
 }
