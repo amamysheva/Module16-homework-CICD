@@ -12,10 +12,12 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class SumCalculatorTest {
     private SumCalculator sumCalculator;
 
+
     @BeforeEach
     void setUp() {
         sumCalculator = new SumCalculator();
     }
+
     @Test
     void testSum() {
         Map<Integer, Integer> testCases = new HashMap<>();
@@ -25,10 +27,12 @@ class SumCalculatorTest {
             assertEquals(item.getValue(), sumCalculator.sum(item.getKey()));
         }
     }
+
     @Test
     void sumZero() {
         assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
     }
+
     @Test
     void sumZero2() {
         assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
